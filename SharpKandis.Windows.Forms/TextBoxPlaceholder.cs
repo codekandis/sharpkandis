@@ -89,8 +89,10 @@
 
     #region PlaceholderLabel
 
+    /// <summary>Stores the label showing the text of the placeholder.</summary>
     private Label _placeholderLabel = null;
 
+    /// <summary>Gets / sets the label showing the text of the placeholder.</summary>
     private Label PlaceholderLabel
     {
       get
