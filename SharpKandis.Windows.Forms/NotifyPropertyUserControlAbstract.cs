@@ -46,7 +46,7 @@
     public NotifyPropertyUserControlAbstract( )
     {
       this.InitializeComponent( );
-      this.ParentChanged += this.ANotifyPropertyUserControl_ParentChanged;
+      this.ParentChanged += this.NotifyPropertyUserControlAbstract_ParentChanged;
       this.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
     }
 
@@ -80,7 +80,10 @@
 
     #region GUI
 
-    private void ANotifyPropertyUserControl_ParentChanged( object sender, System.EventArgs e )
+    /// <summary>Handles the <i>ParentChanged</i> event of the <i>UserControl</i>.</summary>
+    /// <param name="sender">The object which raised the <i>ParentChanged</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>ParentChanged</i> event.</param>
+    private void NotifyPropertyUserControlAbstract_ParentChanged( object sender, System.EventArgs eventArguments )
     {
       Control senderX = sender as Control;
       if ( null != senderX.Parent )
