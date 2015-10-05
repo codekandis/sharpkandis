@@ -58,11 +58,11 @@
     <Compile Include="TextBoxPlaceholder.Designer.cs">
       <DependentUpon>TextBoxPlaceholder.cs</DependentUpon>
     </Compile>
-    <Compile Include="TextBoxXt.cs">
+    <Compile Include="TextBoxSelectable.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TextBoxXt.Designer.cs">
-      <DependentUpon>TextBoxXt.cs</DependentUpon>
+    <Compile Include="TextBoxSelectable.Designer.cs">
+      <DependentUpon>TextBoxSelectable.cs</DependentUpon>
     </Compile>
     <Compile Include="VisibleChangedEventArguments.cs" />
     <Compile Include="VisibleChangedEventHandler.cs" />
@@ -74,8 +74,8 @@
     <EmbeddedResource Include="TextBoxPlaceholder.resx">
       <DependentUpon>TextBoxPlaceholder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TextBoxXt.resx">
-      <DependentUpon>TextBoxXt.cs</DependentUpon>
+    <EmbeddedResource Include="TextBoxSelectable.resx">
+      <DependentUpon>TextBoxSelectable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

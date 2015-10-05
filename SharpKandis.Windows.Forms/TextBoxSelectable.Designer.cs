@@ -1,6 +1,6 @@
 namespace SharpKandis.Windows.Forms
 {
-  partial class TextBoxXt
+  partial class TextBoxSelectable
   {
     /// <summary> 
     /// Erforderliche Designervariable.

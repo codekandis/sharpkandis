@@ -3,13 +3,13 @@
   using System.Windows.Forms;
 
   /// <summary>Represents a text box handling the select all shortcut.</summary>
-  public partial class TextBoxXt:
+  public partial class TextBoxSelectable:
     TextBox
   {
     #region Constructors
 
     /// <summary>Constructor method.</summary>
-    public TextBoxXt( )
+    public TextBoxSelectable( )
       : base( )
     {
       this.KeyDown += this.TextBoxXt_KeyDown;

@@ -8,7 +8,7 @@
 
   /// <summary>Represents a text box with a placeholder.</summary>
   public partial class TextBoxPlaceholder:
-    TextBoxXt
+    TextBoxSelectable
   {
     #region Properties
 
