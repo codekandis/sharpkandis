@@ -17,9 +17,10 @@
     #region PropertyChanging
 
     /// <summary>Will be raised if a property of the element will be changing.</summary>
-    public virtual event PropertyChangingEventHandler PropertyChanging = delegate
-    {
-    };
+    public virtual event PropertyChangingEventHandler PropertyChanging =
+      delegate
+      {
+      };
 
     #endregion PropertyChanging
 
@@ -30,9 +31,10 @@
     #region PropertyChanging
 
     /// <summary>Will be raised if a property of the element has been changed.</summary>
-    public virtual event PropertyChangedEventHandler PropertyChanged = delegate
-    {
-    };
+    public virtual event PropertyChangedEventHandler PropertyChanged =
+      delegate
+      {
+      };
 
     #endregion PropertyChanging
 
