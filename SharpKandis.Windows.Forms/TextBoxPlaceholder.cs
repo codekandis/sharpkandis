@@ -162,7 +162,7 @@
       this.PlaceholderLabel.Text = this.PlaceholderText;
       this.PlaceholderLabel.ForeColor = this.PlaceholderForeColor;
       this.PlaceholderLabel.Parent = this;
-      this.PlaceholderRefresh( );
+      this.PlaceholderVisibilityRefresh( );
       this.PlaceholderLabel.ResumeLayout( );
     }
 
@@ -178,7 +178,8 @@
       this.FontChanged += this._FontChanged;
     }
 
-    private void PlaceholderRefresh( )
+    /// <summary>Refreshes the state of the visibility of the placeholder.</summary>
+    private void PlaceholderVisibilityRefresh( )
     {
       this.PlaceholderLabel.Visible = true == this.PlaceholderVisible
                                       && false == this.Focused
@@ -188,7 +189,7 @@
     private void _PlaceholderVisibleChanged( object sender, VisibleChangedEventArguments eventArguments )
     {
       this.PlaceholderLabel.Visible = eventArguments.Visible;
-      this.PlaceholderRefresh( );
+      this.PlaceholderVisibilityRefresh( );
     }
 
     private void _PlaceholderTextChanged( object sender, TextChangedEventArguments eventArguments )
@@ -203,17 +204,17 @@
 
     private void _GotFocus( object sender, EventArgs eventArguments )
     {
-      this.PlaceholderRefresh( );
+      this.PlaceholderVisibilityRefresh( );
     }
 
     private void _LostFocus( object sender, EventArgs eventArguments )
     {
-      this.PlaceholderRefresh( );
+      this.PlaceholderVisibilityRefresh( );
     }
 
     private void _TextChanged( object sender, EventArgs eventArguments )
     {
-      this.PlaceholderRefresh( );
+      this.PlaceholderVisibilityRefresh( );
     }
 
     private void _FontChanged( object sender, EventArgs eventArguments )
