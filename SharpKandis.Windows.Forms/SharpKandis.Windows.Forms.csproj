@@ -78,6 +78,16 @@
       <DependentUpon>TextBoxXt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpKandis.ComponentModel\SharpKandis.ComponentModel.csproj">
+      <Project>{30042732-b3fe-4c32-b519-4b78ea3d558e}</Project>
+      <Name>SharpKandis.ComponentModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpKandis.Text\SharpKandis.Text.csproj">
+      <Project>{c373ab40-25f2-41df-91f0-e57b8e8a5414}</Project>
+      <Name>SharpKandis.Text</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
