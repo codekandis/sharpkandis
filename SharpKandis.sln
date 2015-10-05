@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Collections.Gen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.ComponentModel", "SharpKandis.ComponentModel\SharpKandis.ComponentModel.csproj", "{30042732-B3FE-4C32-B519-4B78EA3D558E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Io", "SharpKandis.Io\SharpKandis.Io.csproj", "{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{30042732-B3FE-4C32-B519-4B78EA3D558E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30042732-B3FE-4C32-B519-4B78EA3D558E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30042732-B3FE-4C32-B519-4B78EA3D558E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
