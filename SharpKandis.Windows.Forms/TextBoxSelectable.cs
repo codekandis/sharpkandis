@@ -12,19 +12,19 @@
     public TextBoxSelectable( )
       : base( )
     {
-      this.KeyDown += this.TextBoxXt_KeyDown;
+      this.KeyDown += this.TextBoxSelectable_KeyDown;
     }
 
     #endregion Constructors
 
-    #region EventHandler
+    #region EventHandlers
 
     #region GUI
 
-    /// <summary>Will be invoked if the <i>KeyDown</i> event has been raised.</summary>
-    /// <param name="sender">The object raising the <i>KeyDown</i> event.</param>
-    /// <param name="eventArguments">The event arguments passed to the <i>KeyDown</i> event.</param>
-    private void TextBoxXt_KeyDown( object sender, KeyEventArgs eventArguments )
+    /// <summary>Will be invoked if the <i>TextBoxSelectable_KeyDown</i> event of the <i>TextBoxSelectable</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>TextBoxSelectable_KeyDown</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>TextBoxSelectable_KeyDown</i> event.</param>
+    private void TextBoxSelectable_KeyDown( object sender, KeyEventArgs eventArguments )
     {
       TextBox senderX = sender as TextBox;
       switch ( eventArguments.KeyData )
@@ -39,6 +39,6 @@
 
     #endregion GUI
 
-    #endregion EventHandler
+    #endregion EventHandlers
   }
 }
