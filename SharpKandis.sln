@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.ComponentModel"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Io", "SharpKandis.Io\SharpKandis.Io.csproj", "{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Net", "SharpKandis.Net\SharpKandis.Net.csproj", "{3D28153B-C4AC-4F34-A559-575F05FD4F83}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Threading", "SharpKandis.Threading\SharpKandis.Threading.csproj", "{F627757D-8ABE-4600-9B67-DF34B1D6FB02}"
 EndProject
 Global
@@ -39,6 +41,10 @@ Global
 		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62895E49-9F38-40BC-B609-4CB8EFCB7EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D28153B-C4AC-4F34-A559-575F05FD4F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D28153B-C4AC-4F34-A559-575F05FD4F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D28153B-C4AC-4F34-A559-575F05FD4F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D28153B-C4AC-4F34-A559-575F05FD4F83}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Release|Any CPU.ActiveCfg = Release|Any CPU

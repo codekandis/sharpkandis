@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D28153B-C4AC-4F34-A559-575F05FD4F83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpKandis.Net</RootNamespace>
+    <AssemblyName>SharpKandis.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sockets\ConnectAsynchronousState.cs" />
+    <Compile Include="Sockets\ConnectFailedEventArguments.cs" />
+    <Compile Include="Sockets\ConnectFailedEventHandler.cs" />
+    <Compile Include="Sockets\ConnectFailedException.cs" />
+    <Compile Include="Sockets\ConnectSucceedEventArguments.cs" />
+    <Compile Include="Sockets\ConnectSucceedEventHandler.cs" />
+    <Compile Include="Sockets\DisconnectAsynchronousState.cs" />
+    <Compile Include="Sockets\DisconnectFailedEventArguments.cs" />
+    <Compile Include="Sockets\DisconnectFailedEventHandler.cs" />
+    <Compile Include="Sockets\DisconnectFailedException.cs" />
+    <Compile Include="Sockets\DisconnectSucceedEventArguments.cs" />
+    <Compile Include="Sockets\DisconnectSucceedEventHandler.cs" />
+    <Compile Include="Sockets\HttpMethod.cs" />
+    <Compile Include="Sockets\HttpProtocolVersion.cs" />
+    <Compile Include="Sockets\EndPointConversionFailedEventArguments.cs" />
+    <Compile Include="Sockets\EndPointConversionFailedEventHandler.cs" />
+    <Compile Include="Sockets\EndPointConversionFailedException.cs" />
+    <Compile Include="Sockets\EndPointConversionSucceedEventArguments.cs" />
+    <Compile Include="Sockets\EndPointConversionSucceedEventHandler.cs" />
+    <Compile Include="Sockets\UriConversionFailedEventArguments.cs" />
+    <Compile Include="Sockets\UriConversionSucceedEventArguments.cs" />
+    <Compile Include="Sockets\UriConversionSucceedEventHandler.cs" />
+    <Compile Include="Sockets\UriConversionFailedEventHandler.cs" />
+    <Compile Include="Sockets\UriConversionFailedException.cs" />
+    <Compile Include="Sockets\ResponseFailedException.cs" />
+    <Compile Include="Sockets\ResponseAsynchronousState.cs" />
+    <Compile Include="Sockets\RequestAsynchronousState.cs" />
+    <Compile Include="Sockets\RequestFailedException.cs" />
+    <Compile Include="Sockets\ResponseFailedEventArguments.cs" />
+    <Compile Include="Sockets\ResponseFailedEventHandler.cs" />
+    <Compile Include="Sockets\ResponseSucceedEventArguments.cs" />
+    <Compile Include="Sockets\ResponseSucceedEventHandler.cs" />
+    <Compile Include="Sockets\RequestFailedEventHandler.cs" />
+    <Compile Include="Sockets\RequestFailedEventArguments.cs" />
+    <Compile Include="Sockets\RequestSucceedEventArguments.cs" />
+    <Compile Include="Sockets\RequestSucceedEventHandler.cs" />
+    <Compile Include="Sockets\Socket.cs" />
+    <Compile Include="Sockets\SocketHttp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpKandis.Threading\SharpKandis.Threading.csproj">
+      <Project>{F627757D-8ABE-4600-9B67-DF34B1D6FB02}</Project>
+      <Name>SharpKandis.Threading</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
