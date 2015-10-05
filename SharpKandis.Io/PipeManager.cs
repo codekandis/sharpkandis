@@ -4,13 +4,13 @@
   using System.Collections.Generic;
 
   /// <summary>Represents a pipe manager.</summary>
-  public static class PipeManager
+  public class PipeManager
   {
     #region Methods
 
-    /// <summary>Gets the piped input from the StdIn stream.</summary>
-    /// <returns>The piped input from the StdIn stream.</returns>
-    public static IList<string> InputGet( )
+    /// <summary>Gets the piped input from the standard input stream.</summary>
+    /// <returns>The piped input from the standard input stream.</returns>
+    public IList<string> InputGet( )
     {
       IList<string> input = new List<string>( );
       if ( true == Console.IsInputRedirected )
