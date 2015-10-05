@@ -10,6 +10,7 @@
     #region Methods
 
     /// <summary>Invokes a specified callback on any element of a specified enumerable.</summary>
+    /// <typeparam name="TElement">The type of all elements of the enumerable passed in the argument <i>reference</i>.</typeparam>
     /// <param name="reference">The enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
     /// <param name="callback">The callback to invoke on any element of the enumerable passed in the argument <i>reference</i>.</param>
     public static void ForEach<TElement>( this IEnumerable<TElement> reference, Action<TElement> callback )
@@ -21,6 +22,7 @@
     }
 
     /// <summary>Invokes a specified callback on any element of a specified enumerable.</summary>
+    /// <typeparam name="TElement">The type of all elements of the enumerable passed in the argument <i>reference</i>.</typeparam>
     /// <param name="reference">The enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
     /// <param name="callback">The callback to invoke on any element of the enumerable passed in the argument <i>reference</i>.</param>
     public static void ForEach<TElement>( this IEnumerable<TElement> reference, Action<int, TElement> callback )
@@ -33,6 +35,7 @@
     }
 
     /// <summary>Invokes a specified callback on any element of a specified enumerable.</summary>
+    /// <typeparam name="TElement">The type of all elements of the enumerable passed in the argument <i>reference</i>.</typeparam>
     /// <param name="reference">The enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
     /// <param name="callbacks">The list of callbacks to invoke on any element of the enumerable passed in the argument <i>reference</i>.</param>
     public static void ForEach<TElement>( this IEnumerable<TElement> reference, IEnumerable<Action<TElement>> callbacks )
@@ -49,6 +52,7 @@
     }
 
     /// <summary>Invokes a specified callback on any element of a specified enumerable.</summary>
+    /// <typeparam name="TElement">The type of all elements of the enumerable passed in the argument <i>reference</i>.</typeparam>
     /// <param name="reference">The enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
     /// <param name="callbacks">The list of callbacks to invoke on any element of the enumerable passed in the argument <i>reference</i>.</param>
     public static void ForEach<TElement>( this IEnumerable<TElement> reference, IEnumerable<Action<int, TElement>> callbacks )
