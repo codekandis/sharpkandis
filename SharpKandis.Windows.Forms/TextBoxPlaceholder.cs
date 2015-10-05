@@ -169,13 +169,13 @@
     /// <summary>Sets the event handlers of the control.</summary>
     private void EventHandlersSet( )
     {
-      this.PlaceholderVisibleChanged += this._PlaceholderVisibleChanged;
-      this.PlaceholderTextChanged += this._PlaceholderTextChanged;
-      this.PlaceholderForeColorChanged += this._PlaceholderForeColorChanged;
-      this.GotFocus += this._GotFocus;
-      this.LostFocus += this._LostFocus;
-      this.TextChanged += this._TextChanged;
-      this.FontChanged += this._FontChanged;
+      this.PlaceholderVisibleChanged += this.TextBoxPlaceholder_PlaceholderVisibleChanged;
+      this.PlaceholderTextChanged += this.TextBoxPlaceholder_PlaceholderTextChanged;
+      this.PlaceholderForeColorChanged += this.TextBoxPlaceholder_PlaceholderForeColorChanged;
+      this.GotFocus += this.TextBoxPlaceholder_GotFocus;
+      this.LostFocus += this.TextBoxPlaceholder_LostFocus;
+      this.TextChanged += this.TextBoxPlaceholder_TextChanged;
+      this.FontChanged += this.TextBoxPlaceholder_FontChanged;
     }
 
     /// <summary>Refreshes the state of the visibility of the placeholder.</summary>
@@ -186,55 +186,77 @@
                                       && string.Empty == this.Text;
     }
 
-    private void _PlaceholderVisibleChanged( object sender, VisibleChangedEventArguments eventArguments )
+    #endregion Methods
+
+    #region EventHandlers
+
+    #region GUI
+
+    /// <summary>Will be invoked if the <i>PlaceholderVisibleChanged</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>PlaceholderVisibleChanged</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>PlaceholderVisibleChanged</i> event.</param>
+    private void TextBoxPlaceholder_PlaceholderVisibleChanged( object sender, VisibleChangedEventArguments eventArguments )
     {
       this.PlaceholderLabel.Visible = eventArguments.Visible;
       this.PlaceholderVisibilityRefresh( );
     }
 
-    private void _PlaceholderTextChanged( object sender, TextChangedEventArguments eventArguments )
+    /// <summary>Will be invoked if the <i>PlaceholderTextChanged</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>PlaceholderTextChanged</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>PlaceholderTextChanged</i> event.</param>
+    private void TextBoxPlaceholder_PlaceholderTextChanged( object sender, TextChangedEventArguments eventArguments )
     {
       this.PlaceholderLabel.Text = eventArguments.Text;
     }
 
-    private void _PlaceholderForeColorChanged( object sender, ColorChangedEventArguments eventArguments )
+    /// <summary>Will be invoked if the <i>PlaceholderForeColorChanged</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>PlaceholderForeColorChanged</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>PlaceholderForeColorChanged</i> event.</param>
+    private void TextBoxPlaceholder_PlaceholderForeColorChanged( object sender, ColorChangedEventArguments eventArguments )
     {
       this.PlaceholderLabel.ForeColor = eventArguments.Color;
     }
 
-    private void _GotFocus( object sender, EventArgs eventArguments )
+    /// <summary>Will be invoked if the <i>GotFocus</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>GotFocus</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>GotFocus</i> event.</param>
+    private void TextBoxPlaceholder_GotFocus( object sender, EventArgs eventArguments )
     {
       this.PlaceholderVisibilityRefresh( );
     }
 
-    private void _LostFocus( object sender, EventArgs eventArguments )
+    /// <summary>Will be invoked if the <i>LostFocus</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>LostFocus</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>LostFocus</i> event.</param>
+    private void TextBoxPlaceholder_LostFocus( object sender, EventArgs eventArguments )
     {
       this.PlaceholderVisibilityRefresh( );
     }
 
-    private void _TextChanged( object sender, EventArgs eventArguments )
+    /// <summary>Will be invoked if the <i>TextChanged</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+    /// <param name="sender">The object which raised the <i>TextChanged</i> event.</param>
+    /// <param name="eventArguments">The event arguments of the <i>TextChanged</i> event.</param>
+    private void TextBoxPlaceholder_TextChanged( object sender, EventArgs eventArguments )
     {
       this.PlaceholderVisibilityRefresh( );
     }
 
-    private void _FontChanged( object sender, EventArgs eventArguments )
+    private void TextBoxPlaceholder_FontChanged( object sender, EventArgs eventArguments )
     {
       this.PlaceholderLabel.Font = new Font( this.Font, this.Font.Style );
     }
 
-    #endregion Methods
-
-    #region EventHandlers
-
     /// <summary>Will be invoked if the text box has been clicked.</summary>
     /// <param name="sender">The textbox that has been clicked.</param>
     /// <param name="eventArguments">The event arguments of the event.</param>
-    private void lbl_PlaceholderClick( object sender, EventArgs eventArguments )
+    private void TextBoxPlaceholder_PlaceholderClick( object sender, EventArgs eventArguments )
     {
       Control senderX = sender as Control;
       senderX.Hide( );
       this.InvokeOnClick( this, eventArguments );
     }
+
+    #endregion GUI
 
     #endregion EventHandlers
   }
