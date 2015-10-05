@@ -78,7 +78,7 @@
 
     #endregion Methods
 
-    #region EventHandler
+    #region EventHandlers
 
     #region GUI
 
@@ -96,6 +96,6 @@
 
     #endregion GUI
 
-    #endregion EventHandler
+    #endregion EventHandlers
   }
 }
