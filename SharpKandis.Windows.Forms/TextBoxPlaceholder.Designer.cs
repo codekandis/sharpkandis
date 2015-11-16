@@ -26,14 +26,14 @@
     /// Erforderliche Methode für die Designerunterstützung. 
     /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
     /// </summary>
-    private void InitializeComponent( )
+    protected override void InitializeComponent( )
     {
-      this.SuspendLayout();
+      this.SuspendLayout( );
       // 
       // TextBoxPlaceholder
       // 
-      this.Size = new System.Drawing.Size(569, 20);
-      this.ResumeLayout(false);
+      this.Size = new System.Drawing.Size( 569, 20 );
+      this.ResumeLayout( false );
 
     }
 
