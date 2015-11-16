@@ -4,7 +4,7 @@
   using System.Runtime.CompilerServices;
 
   /// <summary>Represents the base class of all classes implementing <i>INotifyPropertyChanging</i> and <i>INotifyPropertyChanged</i>.</summary>
-  abstract public class NotifyPropertyAbstract :
+  abstract public class NotifyPropertyAbstract:
     NotifyPropertyInterface
   {
     #region Events
@@ -14,9 +14,10 @@
     #region PropertyChanging
 
     /// <summary>Will be raised if a property of the element will be changing.</summary>
-    public virtual event PropertyChangingEventHandler PropertyChanging = delegate
-    {
-    };
+    public virtual event PropertyChangingEventHandler PropertyChanging =
+      delegate
+      {
+      };
 
     #endregion PropertyChanging
 
@@ -27,9 +28,10 @@
     #region PropertyChanged
 
     /// <summary>Will be raised if a property of the element has been changed.</summary>
-    public virtual event PropertyChangedEventHandler PropertyChanged = delegate
-    {
-    };
+    public virtual event PropertyChangedEventHandler PropertyChanged =
+      delegate
+      {
+      };
 
     #endregion PropertyChanged
 
