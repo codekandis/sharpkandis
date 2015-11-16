@@ -1,8 +1,9 @@
-﻿namespace SharpKandis.Collections.Generic
+﻿namespace SharpKandis.Collections
 {
   using System;
   using System.Collections;
   using System.Collections.Generic;
+  using SharpKandis.Collections.Generic;
 
   /// <summary>Represents an extension class for all <i>System.Collections.IList</i> classes.</summary>
   public static class IListXt
