@@ -38,6 +38,8 @@
   <ItemGroup>
     <Compile Include="DirectoryAccessEventHandler.cs" />
     <Compile Include="DirectoryAccessEventArguments.cs" />
+    <Compile Include="FileAccessEventHandler.cs" />
+    <Compile Include="FileAccessEventArguments.cs" />
     <Compile Include="PipeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
