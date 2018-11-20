@@ -18,10 +18,10 @@ namespace SharpKandis.Windows.Forms
 		}
 
 		/// <summary>
-		/// Will be invoked if the <i>TextBoxSelectable_KeyDown</i> event of the <i>TextBoxSelectable</i> has been raised.
+		/// Will be invoked if the `TextBoxSelectable_KeyDown` event of the `TextBoxSelectable` has been raised.
 		/// </summary>
-		/// <param name="sender">The object which raised the <i>TextBoxSelectable_KeyDown</i> event.</param>
-		/// <param name="eventArguments">The event arguments of the <i>TextBoxSelectable_KeyDown</i> event.</param>
+		/// <param name="sender">The object which raised the `TextBoxSelectable_KeyDown` event.</param>
+		/// <param name="eventArguments">The event arguments of the `TextBoxSelectable_KeyDown` event.</param>
 		private void TextBoxSelectable_KeyDown( object sender, KeyEventArgs eventArguments )
 		{
 			TextBox senderX = sender as TextBox;

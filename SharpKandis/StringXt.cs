@@ -3,36 +3,36 @@
 namespace SharpKandis
 {
 	/// <summary>
-	/// Represents an extension class of all <i>System.String</i> classes.
+	/// Represents an extension class of all `System.String` classes.
 	/// </summary>
 	public static class StringXt
 	{
 		/// <summary>
-		/// Determines if the <i>string</i> is <i>null</i> or empty.
+		/// Determines if the `string` is `null` or empty.
 		/// </summary>
-		/// <param name="reference">The <i>string</i> to determine if it is <i>null</i> or empty.</param>
-		/// <returns><i>true</i> if the string is <i>null</i> or <i>empty</i>, <i>false</i> otherwise.</returns>
+		/// <param name="reference">The `string` to determine if it is `null` or empty.</param>
+		/// <returns>`true` if the string is `null` or `empty`, `false` otherwise.</returns>
 		public static bool IsNullOrEmpty( this string reference )
 		{
 			return string.IsNullOrEmpty( reference );
 		}
 
 		/// <summary>
-		/// Converts the <i>string</i> into a <i>byte</i> array depending on a specified encoding.
+		/// Converts the `string` into a `byte` array depending on a specified encoding.
 		/// </summary>
-		/// <param name="reference">The <i>string</i> to convert into a <b>byte array</b>.</param>
-		/// <param name="encoding">The encoding to use to convert the <i>string</i> into a <i>byte</i> array.</param>
-		/// <returns>The converted <i>byte</i> array of the string.</returns>
+		/// <param name="reference">The `string` to convert into a <b>byte array</b>.</param>
+		/// <param name="encoding">The encoding to use to convert the `string` into a `byte` array.</param>
+		/// <returns>The converted `byte` array of the string.</returns>
 		public static byte[ ] ToBytes( this string reference, Encoding encoding )
 		{
 			return encoding.GetBytes( reference );
 		}
 
 		/// <summary>
-		/// Converts the <i>string</i> into a <i>byte</i> array depending on the <i>System.Text.Encoding.UTF8</i> encoding.
+		/// Converts the `string` into a `byte` array depending on the `System.Text.Encoding.UTF8` encoding.
 		/// </summary>
-		/// <param name="reference">The <i>string</i> to convert into a <b>byte array</b>.</param>
-		/// <returns>The converted <i>byte</i> array of the <i>string</i>.</returns>
+		/// <param name="reference">The `string` to convert into a <b>byte array</b>.</param>
+		/// <returns>The converted `byte` array of the `string`.</returns>
 		public static byte[ ] ToBytes( this string reference )
 		{
 			return reference.ToBytes( Encoding.UTF8 );

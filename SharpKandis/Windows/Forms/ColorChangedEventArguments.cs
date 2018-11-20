@@ -4,7 +4,7 @@ using System.Drawing;
 namespace SharpKandis.Windows.Forms
 {
 	/// <summary>
-	/// Represents the event arguments of the <i>ColorChanged</i> event.
+	/// Represents the event arguments of the `ColorChanged` event.
 	/// </summary>
 	public class ColorChangedEventArguments:
 		EventArgs

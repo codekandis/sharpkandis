@@ -7,16 +7,16 @@ using System.Reflection;
 namespace SharpKandis
 {
 	/// <summary>
-	/// Represents an extension class of all <i>System.Enum</i> classes.
+	/// Represents an extension class of all `System.Enum` classes.
 	/// </summary>
 	public static class EnumXt
 	{
 		/// <summary>
-		/// Gets the <i>string</i> counterparts of of an enumeration member considering the <i>System.ComponentModel.DescriptionAttribute</i> providing an user defined name.
+		/// Gets the `string` counterparts of of an enumeration member considering the `System.ComponentModel.DescriptionAttribute` providing an user defined name.
 		/// </summary>
-		/// <typeparam name="TEnumeration">The type of the enumeration member passed in the argument <i>enumerationMember</i> to gets its name.</typeparam>
+		/// <typeparam name="TEnumeration">The type of the enumeration member passed in the argument `enumerationMember` to gets its name.</typeparam>
 		/// <param name="reference">The enumeration member to gets its name.</param>
-		/// <returns>The name of the enumeration member passed in the argument <i>enumerationMember</i>.</returns>
+		/// <returns>The name of the enumeration member passed in the argument `enumerationMember`.</returns>
 		public static string ToStringUser<TEnumeration>( this TEnumeration reference )
 			where TEnumeration : struct
 		{

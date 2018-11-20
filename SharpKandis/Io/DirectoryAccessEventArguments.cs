@@ -89,7 +89,7 @@ namespace SharpKandis.Io
 		/// Constructor method.
 		/// </summary>
 		/// <param name="directoryName">The name of the accessed directory.</param>
-		/// <param name="successful"><i>true</i> if the directory access was successful, <i>false</i> otherwise.</param>
+		/// <param name="successful">`true` if the directory access was successful, `false` otherwise.</param>
 		/// <param name="exception">The exception that occured during directory access.</param>
 		public DirectoryAccessEventArguments( string directoryName, bool successful, Exception exception )
 		{

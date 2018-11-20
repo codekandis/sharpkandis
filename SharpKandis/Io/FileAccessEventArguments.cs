@@ -88,7 +88,7 @@ namespace SharpKandis.Io
 		/// Constructor method.
 		/// </summary>
 		/// <param name="fileName">The name of the accessed file.</param>
-		/// <param name="successful"><i>true</i> if the file access was successful, <i>false</i> otherwise.</param>
+		/// <param name="successful">`true` if the file access was successful, `false` otherwise.</param>
 		/// <param name="exception">The exception that occured during file access.</param>
 		public FileAccessEventArguments( string fileName, bool successful, Exception exception )
 		{

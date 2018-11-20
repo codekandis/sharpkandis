@@ -3,7 +3,7 @@
 namespace SharpKandis.Text
 {
 	/// <summary>
-	/// Represents the event arguments of the <i>TextChanged</i> event.
+	/// Represents the event arguments of the `TextChanged` event.
 	/// </summary>
 	public class TextChangedEventArguments:
 		EventArgs

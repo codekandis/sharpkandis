@@ -3,7 +3,7 @@
 namespace SharpKandis.Windows.Forms
 {
 	/// <summary>
-	/// Represents the event arguments of the <i>VisibleChanged</i> event.
+	/// Represents the event arguments of the `VisibleChanged` event.
 	/// </summary>
 	public class VisibleChangedEventArguments:
 		EventArgs

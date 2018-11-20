@@ -3,15 +3,15 @@
 namespace SharpKandis
 {
 	/// <summary>
-	/// Represents an extension class of all <i>System.byte[ ]</i> classes.
+	/// Represents an extension class of all `System.byte[ ]` classes.
 	/// </summary>
 	public static class ByteArrayXt
 	{
 		/// <summary>
-		/// Gets the concatenated <i>string</i> representation of each element of the generic array.
+		/// Gets the concatenated `string` representation of each element of the generic array.
 		/// </summary>
-		/// <param name="reference">The generic array to get the concatenated <i>string</i> representation of each element.</param>
-		/// <returns>The concatenated <i>string</i> representation of each element of the generic array.</returns>
+		/// <param name="reference">The generic array to get the concatenated `string` representation of each element.</param>
+		/// <returns>The concatenated `string` representation of each element of the generic array.</returns>
 		public static string ToStringAll( this byte[ ] reference )
 		{
 			string stringAll = string.Empty;

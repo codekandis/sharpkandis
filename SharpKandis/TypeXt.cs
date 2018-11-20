@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace SharpKandis
 {
 	/// <summary>
-	/// Represents an extension class of all <i>System.Type</i> classes.
+	/// Represents an extension class of all `System.Type` classes.
 	/// </summary>
 	public static class TypeXt
 	{

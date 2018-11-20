@@ -6,7 +6,7 @@ using SharpKandis.ComponentModel;
 namespace SharpKandis.Windows.Forms
 {
 	/// <summary>
-	/// Represents the base class of all <i>UserControl</i> classes implementing <i>INotifyPropertyChanging</i> and <i>INotifyPropertyChanged</i>.
+	/// Represents the base class of all `UserControl` classes implementing `INotifyPropertyChanging` and `INotifyPropertyChanged`.
 	/// </summary>
 	public partial class NotifyPropertyUserControlAbstract:
 		UserControl,
@@ -39,7 +39,7 @@ namespace SharpKandis.Windows.Forms
 		}
 
 		/// <summary>
-		/// Raises the <i>PropertyChanging</i> event for a specific property specified by a passed property name.
+		/// Raises the `PropertyChanging` event for a specific property specified by a passed property name.
 		/// </summary>
 		/// <param name="propertyName">The name of the property which is changing.</param>
 		public virtual void PropertyChangingRaise( [CallerMemberName] string propertyName = "" )
@@ -49,7 +49,7 @@ namespace SharpKandis.Windows.Forms
 		}
 
 		/// <summary>
-		/// Raises the <i>PropertyChanged</i> event for a specific property specified by a passed property name.
+		/// Raises the `PropertyChanged` event for a specific property specified by a passed property name.
 		/// </summary>
 		/// <param name="propertyName">The name of the property which has been changed.</param>
 		public virtual void PropertyChangedRaise( [CallerMemberName] string propertyName = "" )
@@ -59,10 +59,10 @@ namespace SharpKandis.Windows.Forms
 		}
 
 		/// <summary>
-		/// Will be invoked if the <i>ParentChanged</i> event of the <i>UserControl</i> has been raised.
+		/// Will be invoked if the `ParentChanged` event of the `UserControl` has been raised.
 		/// </summary>
-		/// <param name="sender">The object which raised the <i>ParentChanged</i> event.</param>
-		/// <param name="eventArguments">The event arguments of the <i>ParentChanged</i> event.</param>
+		/// <param name="sender">The object which raised the `ParentChanged` event.</param>
+		/// <param name="eventArguments">The event arguments of the `ParentChanged` event.</param>
 		private void NotifyPropertyUserControlAbstract_ParentChanged( object sender, System.EventArgs eventArguments )
 		{
 			Control senderX = sender as Control;

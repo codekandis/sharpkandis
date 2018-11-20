@@ -4,7 +4,7 @@ using SharpKandis.Collections.Generic;
 namespace SharpKandis
 {
 	/// <summary>
-	/// Represents an extension class of all generic <i>System.Array</i> classes.
+	/// Represents an extension class of all generic `System.Array` classes.
 	/// </summary>
 	public static class ArrayXt
 	{
@@ -12,8 +12,8 @@ namespace SharpKandis
 		/// Concatenates a various amount of specified generic arrays into one generic array.
 		/// </summary>
 		/// <typeparam name="TElement">The type of the elements of the generic arrays to concatenate.</typeparam>
-		/// <param name="reference">The generic array to concatenate the generic arrays passed in the argument <i>arrays</i> with.</param>
-		/// <param name="arrays">The generic arrays to be concatenated with the generic array passed in the argument <i>reference</i>.</param>
+		/// <param name="reference">The generic array to concatenate the generic arrays passed in the argument `arrays` with.</param>
+		/// <param name="arrays">The generic arrays to be concatenated with the generic array passed in the argument `reference`.</param>
 		/// <returns>The concatenated generic arrays.</returns>
 		public static TElement[ ] ConcatAll<TElement>( this TElement[ ] reference, params TElement[ ][ ] arrays )
 		{

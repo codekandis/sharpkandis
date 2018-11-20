@@ -4,7 +4,7 @@ using System.Linq;
 namespace SharpKandis.Collections.Generic
 {
 	/// <summary>
-	/// Represents an extension class for all generic <i>System.Collections.Generic.IEnumerable&lt;T&gt;</i> classes.
+	/// Represents an extension class for all generic `System.Collections.Generic.IEnumerable` classes.
 	/// </summary>
 	public static class IEnumerableXt
 	{
@@ -27,9 +27,9 @@ namespace SharpKandis.Collections.Generic
 		/// <summary>
 		/// Invokes a specified callback on any element of a specified generic enumerable.
 		/// </summary>
-		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
-		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
-		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. The callback provides the fetched element itself.</param>
+		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument `reference`.</typeparam>
+		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument `callback` on any element.</param>
+		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument `reference`. The callback provides the fetched element itself.</param>
 		public static void ForEach<TElement>( this IEnumerable<TElement> reference, ForEachDelegateFetched<TElement> callback )
 		{
 			foreach ( TElement referenceFetched in reference )
@@ -41,9 +41,9 @@ namespace SharpKandis.Collections.Generic
 		/// <summary>
 		/// Invokes a specified callback on any element of a specified generic enumerable.
 		/// </summary>
-		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
-		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
-		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. The callback provides the index of the fetched element and the fetched element itself.</param>
+		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument `reference`.</typeparam>
+		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument `callback` on any element.</param>
+		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument `reference`. The callback provides the index of the fetched element and the fetched element itself.</param>
 		public static void ForEach<TElement>( this IEnumerable<TElement> reference, ForEachDelegateIndexFetched<int, TElement> callback )
 		{
 			for ( int referenceFetchedIndex = 0; referenceFetchedIndex < reference.Count( ); referenceFetchedIndex++ )
@@ -56,9 +56,9 @@ namespace SharpKandis.Collections.Generic
 		/// <summary>
 		/// Invokes a specified callback on any element of a specified generic enumerable.
 		/// </summary>
-		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
-		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
-		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. Each callback provides the the fetched element itself.</param>
+		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument `reference`.</typeparam>
+		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument `callback` on any element.</param>
+		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument `reference`. Each callback provides the the fetched element itself.</param>
 		public static void ForEach<TElement>( this IEnumerable<TElement> reference, IEnumerable<ForEachDelegateFetched<TElement>> callbacks )
 		{
 			foreach ( TElement referenceFetched in reference )
@@ -75,9 +75,9 @@ namespace SharpKandis.Collections.Generic
 		/// <summary>
 		/// Invokes a specified callback on any element of a specified generic enumerable.
 		/// </summary>
-		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
-		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
-		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. Each callback provides the index of the fetched element and the fetched element itself.</param>
+		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument `reference`.</typeparam>
+		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument `callback` on any element.</param>
+		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument `reference`. Each callback provides the index of the fetched element and the fetched element itself.</param>
 		public static void ForEach<TElement>( this IEnumerable<TElement> reference, IEnumerable<ForEachDelegateIndexFetched<int, TElement>> callbacks )
 		{
 			for ( int referenceFetchedIndex = 0; referenceFetchedIndex < reference.Count( ); referenceFetchedIndex++ )

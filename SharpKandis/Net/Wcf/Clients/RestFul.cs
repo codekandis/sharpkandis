@@ -80,7 +80,7 @@ namespace SharpKandis.Net.Wcf.Clients
 		}
 
 		/// <summary>
-		/// Creates a new instance of <i>RestFul</i>.
+		/// Creates a new instance of `RestFul`.
 		/// </summary>
 		/// <param name="uriApi">The base API URI of the WCF RESTFul client.</param>
 		public RestFul( Uri uriApi )
@@ -89,7 +89,7 @@ namespace SharpKandis.Net.Wcf.Clients
 		}
 
 		/// <summary>
-		/// Creates a new instance of <i>RestFul</i>.
+		/// Creates a new instance of `RestFul`.
 		/// </summary>
 		/// <param name="uriApi">The base API URI of the WCF RESTFul client.</param>
 		public RestFul( string uriApi )

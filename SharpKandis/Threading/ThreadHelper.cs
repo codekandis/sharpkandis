@@ -8,7 +8,7 @@ namespace SharpKandis.Threading
 	public static class ThreadHelper
 	{
 		/// <summary>
-		/// Starts a thread directly without the creation of a <i>System.Threading.ThreadStart</i> and a <i>System.Threading.Thread</i> instance.
+		/// Starts a thread directly without the creation of a `System.Threading.ThreadStart` and a `System.Threading.Thread` instance.
 		/// </summary>
 		/// <param name="threadStart">The delegate to be invoked while the thread starts.</param>
 		/// <returns>The started thread.</returns>
@@ -20,7 +20,7 @@ namespace SharpKandis.Threading
 		}
 
 		/// <summary>
-		/// Starts a thread directly without the creation of a <i>System.Threading.ThreadStart</i> and a <i>System.Threading.Thread</i> instance.
+		/// Starts a thread directly without the creation of a `System.Threading.ThreadStart` and a `System.Threading.Thread` instance.
 		/// </summary>
 		/// <param name="parameterizedThreadStart">The delegate to be invoked while the thread starts.</param>
 		/// <returns>The started thread.</returns>
