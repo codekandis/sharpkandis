@@ -69,8 +69,7 @@ static public class Debug
 	/// <param name="values">The values to log.</param>
 	static public void Log( object reference, params object[ ] values )
 	{
-#if false == DEBUG
-#else
+#if true == DEBUG
 		string valuesJoined = string.Join( " :: ", values );
 		string bufferString = string.Format( "[{0}] {1}",
 											 reference,
