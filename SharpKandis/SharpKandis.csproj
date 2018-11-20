@@ -38,6 +38,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayXt.cs" />
@@ -55,11 +57,13 @@
     <Compile Include="Io\FileAccessEventArguments.cs" />
     <Compile Include="Io\FileAccessEventHandler.cs" />
     <Compile Include="Io\PipeManager.cs" />
+    <Compile Include="Net\Wcf\Clients\RestFul.cs" />
     <Compile Include="TypeXt.cs" />
     <Compile Include="StringXt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UriXt.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
