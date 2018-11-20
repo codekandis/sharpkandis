@@ -60,6 +60,7 @@
     <Compile Include="LongType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SByteType.cs" />
+    <Compile Include="ShortType.cs" />
     <Compile Include="StringXt.cs" />
     <Compile Include="TypeXt.cs" />
     <Compile Include="UIntType.cs" />
