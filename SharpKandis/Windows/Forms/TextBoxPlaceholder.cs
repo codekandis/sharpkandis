@@ -11,7 +11,7 @@ namespace SharpKandis.Windows.Forms
 		TextBoxSelectable
 	{
 		/// <summary>Stores the visibility of the placeholder.</summary>
-		private bool _placeholderVisible = true;
+		private bool placeholderVisible = true;
 
 		/// <summary>Gets / sets the visibility of the placeholder.</summary>
 		[Browsable( true )]
@@ -21,18 +21,18 @@ namespace SharpKandis.Windows.Forms
 		{
 			get
 			{
-				return this._placeholderVisible;
+				return this.placeholderVisible;
 			}
 			set
 			{
-				this._placeholderVisible = value;
+				this.placeholderVisible = value;
 				VisibleChangedEventArguments eventArguments = new VisibleChangedEventArguments( value );
 				this.PlaceholderVisibleChanged( this, eventArguments );
 			}
 		}
 
 		/// <summary>Stores the text of the placeholder.</summary>
-		private string _placeholderText = "";
+		private string placeholderText = "";
 
 		/// <summary>Gets / sets the text of the placeholder.</summary>
 		[Browsable( true )]
@@ -42,18 +42,18 @@ namespace SharpKandis.Windows.Forms
 		{
 			get
 			{
-				return this._placeholderText;
+				return this.placeholderText;
 			}
 			set
 			{
-				this._placeholderText = value;
+				this.placeholderText = value;
 				TextChangedEventArguments eventArguments = new TextChangedEventArguments( value );
 				this.PlaceholderTextChanged( this, eventArguments );
 			}
 		}
 
 		/// <summary>Stores the fore color of the placeholder.</summary>
-		private Color _placeholderForeColor = Color.Silver;
+		private Color placeholderForeColor = Color.Silver;
 
 		/// <summary>Gets / sets the fore color of the placeholder.</summary>
 		[Browsable( true )]
@@ -63,29 +63,29 @@ namespace SharpKandis.Windows.Forms
 		{
 			get
 			{
-				return this._placeholderForeColor;
+				return this.placeholderForeColor;
 			}
 			set
 			{
-				this._placeholderForeColor = value;
+				this.placeholderForeColor = value;
 				ColorChangedEventArguments eventArguments = new ColorChangedEventArguments( value );
 				this.PlaceholderForeColorChanged( this, eventArguments );
 			}
 		}
 
 		/// <summary>Stores the label showing the text of the placeholder.</summary>
-		private Label _placeholderLabel = null;
+		private Label placeholderLabel = null;
 
 		/// <summary>Gets / sets the label showing the text of the placeholder.</summary>
 		private Label PlaceholderLabel
 		{
 			get
 			{
-				return this._placeholderLabel;
+				return this.placeholderLabel;
 			}
 			set
 			{
-				this._placeholderLabel = value;
+				this.placeholderLabel = value;
 			}
 		}
 
