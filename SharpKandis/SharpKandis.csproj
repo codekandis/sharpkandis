@@ -55,6 +55,7 @@
     <Compile Include="DoubleType.cs" />
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
+    <Compile Include="FloatType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SByteType.cs" />
     <Compile Include="StringXt.cs" />
