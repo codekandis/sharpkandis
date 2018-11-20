@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis", "SharpKandis\SharpKandis.csproj", "{F0796AAE-DBDB-4B0D-96E6-018E6E2953BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Threading", "SharpKandis.Threading\SharpKandis.Threading.csproj", "{F627757D-8ABE-4600-9B67-DF34B1D6FB02}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Windows.Forms", "SharpKandis.Windows.Forms\SharpKandis.Windows.Forms.csproj", "{68869F07-58FC-4619-A37F-EFB070B85D6E}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{F0796AAE-DBDB-4B0D-96E6-018E6E2953BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0796AAE-DBDB-4B0D-96E6-018E6E2953BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0796AAE-DBDB-4B0D-96E6-018E6E2953BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F627757D-8ABE-4600-9B67-DF34B1D6FB02}.Release|Any CPU.Build.0 = Release|Any CPU
 		{68869F07-58FC-4619-A37F-EFB070B85D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{68869F07-58FC-4619-A37F-EFB070B85D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68869F07-58FC-4619-A37F-EFB070B85D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
