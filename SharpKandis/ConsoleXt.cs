@@ -23,6 +23,10 @@ namespace SharpKandis
 			return stringAll;
 		}
 
+		/// <summary>Reads a character from the console input stream.</summary>
+		/// <param name="charactersAllowed">Specifies the list of valid characters.</param>
+		/// <param name="caseSensitive">Specifies if the input is recognized case sensitive</param>
+		/// <returns>The character read from the console input stream.</returns>
 		public static char Read( char[ ] charactersAllowed, bool caseSensitive )
 		{
 			char input = default( char );
@@ -58,6 +62,9 @@ namespace SharpKandis
 			return input;
 		}
 
+		/// <summary>Reads a character from the console input stream.</summary>
+		/// <param name="charactersAllowed">Specifies the list of valid characters.</param>
+		/// <returns>The character read from the console input stream.</returns>
 		public static char Read( char[ ] charactersAllowed )
 		{
 			char input = ConsoleXt.Read( charactersAllowed, false );
