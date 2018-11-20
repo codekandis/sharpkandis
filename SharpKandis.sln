@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis", "SharpKandis\SharpKandis.csproj", "{F0796AAE-DBDB-4B0D-96E6-018E6E2953BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpKandis.Collections", "SharpKandis.Collections\SharpKandis.Collections.csproj", "{B722393E-172E-4B46-BD01-576FC4F574E2}"
