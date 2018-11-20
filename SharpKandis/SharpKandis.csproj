@@ -38,8 +38,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayXt.cs" />
@@ -65,8 +67,41 @@
     <Compile Include="StringXt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UriXt.cs" />
+    <Compile Include="Windows\Forms\ColorChangedEventArguments.cs" />
+    <Compile Include="Windows\Forms\ColorChangedEventHandler.cs" />
+    <Compile Include="Windows\Forms\ControlXt.cs" />
+    <Compile Include="Windows\Forms\NotifyPropertyUserControlAbstract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\NotifyPropertyUserControlAbstract.Designer.cs">
+      <DependentUpon>NotifyPropertyUserControlAbstract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxPlaceholder.Designer.cs">
+      <DependentUpon>TextBoxPlaceholder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxSelectable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxSelectable.Designer.cs">
+      <DependentUpon>TextBoxSelectable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\VisibleChangedEventArguments.cs" />
+    <Compile Include="Windows\Forms\VisibleChangedEventHandler.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Windows\Forms\NotifyPropertyUserControlAbstract.resx">
+      <DependentUpon>NotifyPropertyUserControlAbstract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TextBoxPlaceholder.resx">
+      <DependentUpon>TextBoxPlaceholder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TextBoxSelectable.resx">
+      <DependentUpon>TextBoxSelectable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
