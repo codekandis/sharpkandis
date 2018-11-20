@@ -43,6 +43,8 @@
     <Compile Include="ArrayXt.cs" />
     <Compile Include="Collections\CountableInterface.cs" />
     <Compile Include="Collections\Generic\IEnumerableXt.cs" />
+    <Compile Include="ComponentModel\NotifyPropertyAbstract.cs" />
+    <Compile Include="ComponentModel\NotifyPropertyInterface.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
