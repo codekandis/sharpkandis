@@ -8,18 +8,18 @@ namespace SharpKandis.Windows.Forms
 		EventArgs
 	{
 		/// <summary>Stores the color that has been changed.</summary>
-		private Color _color = default( Color );
+		private Color color = default( Color );
 
 		/// <summary>Gets / sets the color that has been changed.</summary>
 		public virtual Color Color
 		{
 			get
 			{
-				return this._color;
+				return this.color;
 			}
 			private set
 			{
-				this._color = value;
+				this.color = value;
 			}
 		}
 
