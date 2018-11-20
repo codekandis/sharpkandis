@@ -36,10 +36,9 @@ namespace SharpKandis
 		public static EndPoint EndPointGet( this Uri reference, AddressFamily addressFamily, int index )
 		{
 			IEnumerable<EndPoint> endPoints = reference.EndPointsGet( addressFamily );
-			EndPoint endPoint = 0 == endPoints.Count( )
-								? null
-								: endPoints.ElementAt( index );
-			return endPoint;
+			return 0 == endPoints.Count( )
+						? null
+						: endPoints.ElementAt( index );
 		}
 	}
 }

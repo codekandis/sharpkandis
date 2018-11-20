@@ -30,11 +30,7 @@ namespace SharpKandis.Io
 		{
 			get
 			{
-				if ( null == this.fileInformation )
-				{
-					this.fileInformation = new FileInfo( this.FileName );
-				}
-				return this.fileInformation;
+				return this.fileInformation ?? ( this.fileInformation = new FileInfo( this.FileName ) );
 			}
 		}
 

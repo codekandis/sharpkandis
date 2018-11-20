@@ -12,8 +12,7 @@ namespace SharpKandis.Windows.Forms
 		/// <returns>The return value of the action if the action returns one, <i>null</i> otherwise.</returns>
 		public static object Invoke( this Control control, Action action )
 		{
-			object result = control.Invoke( action );
-			return result;
+			return control.Invoke( action );
 		}
 
 		/// <summary>Invokes an action on a specified control.</summary>
@@ -23,8 +22,7 @@ namespace SharpKandis.Windows.Forms
 		/// <returns>The return value of the action if the action returns one, <i>null</i> otherwise.</returns>
 		public static object Invoke( this Control control, Action action, params object[ ] arguments )
 		{
-			object result = control.Invoke( action, ( object ) arguments );
-			return result;
+			return control.Invoke( action, ( object ) arguments );
 		}
 	}
 }

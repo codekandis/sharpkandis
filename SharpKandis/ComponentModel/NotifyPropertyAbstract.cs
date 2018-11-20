@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 namespace SharpKandis.ComponentModel
 {
 	/// <summary>Represents the base class of all classes implementing <i>INotifyPropertyChanging</i> and <i>INotifyPropertyChanged</i>.</summary>
-	abstract public class NotifyPropertyAbstract:
+	public abstract class NotifyPropertyAbstract:
 		NotifyPropertyInterface
 	{
 		/// <summary>Will be raised if a property of the element will be changing.</summary>

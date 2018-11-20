@@ -3,7 +3,7 @@
 namespace SharpKandis.Threading
 {
 	/// <summary>Represents an helper class for all threading purposes.</summary>
-	public class ThreadHelper
+	public static class ThreadHelper
 	{
 		/// <summary>Starts a thread directly without the creation of a <i>System.Threading.ThreadStart</i> and a <i>System.Threading.Thread</i> instance.</summary>
 		/// <param name="threadStart">The delegate to be invoked while the thread starts.</param>

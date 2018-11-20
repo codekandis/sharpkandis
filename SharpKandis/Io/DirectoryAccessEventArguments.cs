@@ -31,11 +31,7 @@ namespace SharpKandis.Io
 		{
 			get
 			{
-				if ( null == this.directoryInformation )
-				{
-					this.directoryInformation = new DirectoryInfo( this.DirectoryName );
-				}
-				return this.directoryInformation;
+				return this.directoryInformation ?? ( this.directoryInformation = new DirectoryInfo( this.DirectoryName ) );
 			}
 		}
 

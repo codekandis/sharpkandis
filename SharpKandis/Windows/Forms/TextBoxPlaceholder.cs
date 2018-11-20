@@ -202,6 +202,9 @@ namespace SharpKandis.Windows.Forms
 			this.PlaceholderVisibilityRefresh( );
 		}
 
+		/// <summary>Will be invoked if the <i>FontChanged</i> event of the <i>TextBoxPlaceholder</i> has been raised.</summary>
+		/// <param name="sender">The object which raised the <i>FontChanged</i> event.</param>
+		/// <param name="eventArguments">The event arguments of the <i>FontChanged</i> event.</param>
 		private void TextBoxPlaceholder_FontChanged( object sender, EventArgs eventArguments )
 		{
 			this.PlaceholderLabel.Font = new Font( this.Font, this.Font.Style );

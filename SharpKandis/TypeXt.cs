@@ -24,10 +24,9 @@ namespace SharpKandis
 		/// <returns>The name of the type without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedName( this Type reference )
 		{
-			string processedName = typeof( void ) == reference
-								   ? "void"
-								   : TypeXt.RemoveGenericDimension( reference.Name );
-			return processedName;
+			return typeof( void ) == reference
+				   ? "void"
+				   : TypeXt.RemoveGenericDimension( reference.Name );
 		}
 
 		/// <summary>Gets the full name of the type including the namespace, without assembly information and without a generic dimension.</summary>
@@ -35,10 +34,9 @@ namespace SharpKandis
 		/// <returns>The full name of the type including the namespace, without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedNameFull( this Type reference )
 		{
-			string processedNameFull = typeof( void ) == reference
-									   ? "void"
-									   : reference.Namespace + '.' + reference.GetProcessedName( );
-			return processedNameFull;
+			return typeof( void ) == reference
+				   ? "void"
+				   : reference.Namespace + '.' + reference.GetProcessedName( );
 		}
 
 		/// <summary>Gets the name of the generic type without assembly information and without a generic dimension.</summary>
@@ -47,18 +45,19 @@ namespace SharpKandis
 		public static string GetProcessedNameGeneric( this Type reference )
 		{
 			string processedNameGeneric = reference.GetProcessedName( );
-			if ( true == reference.IsGenericType )
+			if ( false == reference.IsGenericType )
 			{
-				processedNameGeneric += '<';
-				List<string> processedNamesGenericArguments = new List<string>( );
-				foreach ( Type typeGeneric in reference.GetGenericArguments( ) )
-				{
-					string processedNameGenericArgument = typeGeneric.GetProcessedNameGeneric( );
-					processedNamesGenericArguments.Add( processedNameGenericArgument );
-				}
-				processedNameGeneric += string.Join( ",", processedNamesGenericArguments );
-				processedNameGeneric += '>';
+				return processedNameGeneric;
 			}
+			processedNameGeneric += '<';
+			List<string> processedNamesGenericArguments = new List<string>( );
+			foreach ( Type typeGeneric in reference.GetGenericArguments( ) )
+			{
+				string processedNameGenericArgument = typeGeneric.GetProcessedNameGeneric( );
+				processedNamesGenericArguments.Add( processedNameGenericArgument );
+			}
+			processedNameGeneric += string.Join( ",", processedNamesGenericArguments );
+			processedNameGeneric += '>';
 			return processedNameGeneric;
 		}
 
@@ -68,18 +67,19 @@ namespace SharpKandis
 		public static string GetProcessedNameGenericFull( this Type reference )
 		{
 			string processedNameGenericFull = reference.GetProcessedNameFull( );
-			if ( true == reference.IsGenericType )
+			if ( false == reference.IsGenericType )
 			{
-				processedNameGenericFull += '<';
-				List<string> processedNamesGenericFullArguments = new List<string>( );
-				foreach ( Type typeGeneric in reference.GetGenericArguments( ) )
-				{
-					string processedNameGenericFullArgument = typeGeneric.GetProcessedNameGenericFull( );
-					processedNamesGenericFullArguments.Add( processedNameGenericFullArgument );
-				}
-				processedNameGenericFull += string.Join( ",", processedNamesGenericFullArguments );
-				processedNameGenericFull += '>';
+				return processedNameGenericFull;
 			}
+			processedNameGenericFull += '<';
+			List<string> processedNamesGenericFullArguments = new List<string>( );
+			foreach ( Type typeGeneric in reference.GetGenericArguments( ) )
+			{
+				string processedNameGenericFullArgument = typeGeneric.GetProcessedNameGenericFull( );
+				processedNamesGenericFullArguments.Add( processedNameGenericFullArgument );
+			}
+			processedNameGenericFull += string.Join( ",", processedNamesGenericFullArguments );
+			processedNameGenericFull += '>';
 			return processedNameGenericFull;
 		}
 	}

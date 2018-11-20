@@ -58,7 +58,9 @@
     <Compile Include="Io\DirectoryAccessEventHandler.cs" />
     <Compile Include="Io\FileAccessEventArguments.cs" />
     <Compile Include="Io\FileAccessEventHandler.cs" />
+    <Compile Include="Io\PipeManagerInteface.cs" />
     <Compile Include="Io\PipeManager.cs" />
+    <Compile Include="Net\Wcf\Clients\RestFulInterface.cs" />
     <Compile Include="Net\Wcf\Clients\RestFul.cs" />
     <Compile Include="Text\TextChangedEventArguments.cs" />
     <Compile Include="Text\TextChangedEventHandler.cs" />

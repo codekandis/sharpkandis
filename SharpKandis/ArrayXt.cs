@@ -31,8 +31,7 @@ namespace SharpKandis
 		/// <returns>The slice from the generic array.</returns>
 		public static TElement[ ] Slice<TElement>( this TElement[ ] reference, int offset, int count )
 		{
-			TElement[ ] sliced = reference.Skip( offset ).Take( count ).ToArray( );
-			return sliced;
+			return reference.Skip( offset ).Take( count ).ToArray( );
 		}
 	}
 }

@@ -30,35 +30,36 @@ namespace SharpKandis
 		public static char Read( char[ ] charactersAllowed, bool caseSensitive )
 		{
 			char input = default( char );
-			if ( null != charactersAllowed && 0 != charactersAllowed.Length )
+			if ( null == charactersAllowed || 0 == charactersAllowed.Length )
 			{
+				return input;
+			}
+			if ( false == caseSensitive )
+			{
+				IEnumerable<char> charactersAllowedLower =
+					(
+					from
+						char characterAllowedFetched
+					in
+						charactersAllowed
+					select
+						char.ToLower( characterAllowedFetched )
+					)
+					.Distinct( );
+				charactersAllowed = charactersAllowedLower.ToArray( );
+			}
+			bool inputMatched = false;
+			do
+			{
+				input = Console.ReadKey( true ).KeyChar;
 				if ( false == caseSensitive )
 				{
-					IEnumerable<char> charactersAllowedLower =
-						(
-						from
-							char characterAllowedFetched
-						in
-							charactersAllowed
-						select
-							char.ToLower( characterAllowedFetched )
-						)
-						.Distinct( );
-					charactersAllowed = charactersAllowedLower.ToArray( );
+					input = char.ToLower( input );
 				}
-				bool inputMatched = false;
-				do
-				{
-					input = Console.ReadKey( true ).KeyChar;
-					if ( false == caseSensitive )
-					{
-						input = char.ToLower( input );
-					}
-					inputMatched = charactersAllowed.Contains( input );
-				}
-				while ( false == inputMatched );
-				Console.Write( input );
+				inputMatched = charactersAllowed.Contains( input );
 			}
+			while ( false == inputMatched );
+			Console.Write( input );
 			return input;
 		}
 
@@ -67,8 +68,7 @@ namespace SharpKandis
 		/// <returns>The character read from the console input stream.</returns>
 		public static char Read( char[ ] charactersAllowed )
 		{
-			char input = ConsoleXt.Read( charactersAllowed, false );
-			return input;
+			return ConsoleXt.Read( charactersAllowed, false );
 		}
 	}
 }

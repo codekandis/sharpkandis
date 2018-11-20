@@ -4,16 +4,17 @@ using System.ServiceModel.Web;
 
 namespace SharpKandis.Net.Wcf.Clients
 {
-	/// <summary>Represents a WCF RESTFul Client.</summary>
+	/// <summary>Represents a WCF RESTFul client.</summary>
 	/// <typeparam name="TServiceContract">The type of the WCF RESTFul service contract.</typeparam>
 	public class RestFul<TServiceContract>
+		: RestFulInterface<TServiceContract>
 		where TServiceContract : class
 	{
 		/// <summary>Stores the base API URI of the WCF RESTFul client.</summary>
 		private Uri uriApi = null;
 
 		/// <summary>Gets / sets the base API URI of the WCF RESTFul client.</summary>
-		public Uri UriApi
+		public virtual Uri UriApi
 		{
 			get
 			{

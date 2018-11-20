@@ -10,8 +10,7 @@ namespace SharpKandis
 		/// <returns><i>true</i> if the string is <i>null</i> or <i>empty</i>, <i>false</i> otherwise.</returns>
 		public static bool IsNullOrEmpty( this string reference )
 		{
-			bool isNullOrEmpty = string.IsNullOrEmpty( reference );
-			return isNullOrEmpty;
+			return string.IsNullOrEmpty( reference );
 		}
 
 		/// <summary>Converts the <i>string</i> into a <i>byte</i> array depending on a specified encoding.</summary>
@@ -20,8 +19,7 @@ namespace SharpKandis
 		/// <returns>The converted <i>byte</i> array of the string.</returns>
 		public static byte[ ] ToBytes( this string reference, Encoding encoding )
 		{
-			byte[ ] bytes = encoding.GetBytes( reference );
-			return bytes;
+			return encoding.GetBytes( reference );
 		}
 
 		/// <summary>Converts the <i>string</i> into a <i>byte</i> array depending on the <i>System.Text.Encoding.UTF8</i> encoding.</summary>
@@ -29,8 +27,7 @@ namespace SharpKandis
 		/// <returns>The converted <i>byte</i> array of the <i>string</i>.</returns>
 		public static byte[ ] ToBytes( this string reference )
 		{
-			byte[ ] bytes = reference.ToBytes( Encoding.UTF8 );
-			return bytes;
+			return reference.ToBytes( Encoding.UTF8 );
 		}
 	}
 }

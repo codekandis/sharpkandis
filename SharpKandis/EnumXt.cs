@@ -30,23 +30,24 @@ namespace SharpKandis
 					typeEnumeration.GetMember( enumerationMemberNameOrigin )
 				select
 					enumerationMemberInfoFetched;
-			if ( 0 < enumerationMemberInformations.Count( ) )
+			if ( 0 == enumerationMemberInformations.Count( ) )
 			{
-				IEnumerable<DescriptionAttribute> enumerationMemberAttributes =
-					from
-						DescriptionAttribute enumerationMemberAttributeFetched
-					in
-						enumerationMemberInformations.ElementAt( 0 ).GetCustomAttributes( typeof( DescriptionAttribute ), false )
-					select
-						enumerationMemberAttributeFetched;
-				if ( 0 == enumerationMemberAttributes.Count( ) )
-				{
-					enumerationMemberName = reference.ToString( );
-				}
-				else
-				{
-					enumerationMemberName = enumerationMemberAttributes.First( ).Description;
-				}
+				return enumerationMemberName;
+			}
+			IEnumerable<DescriptionAttribute> enumerationMemberAttributes =
+				from
+					DescriptionAttribute enumerationMemberAttributeFetched
+				in
+					enumerationMemberInformations.ElementAt( 0 ).GetCustomAttributes( typeof( DescriptionAttribute ), false )
+				select
+					enumerationMemberAttributeFetched;
+			if ( 0 == enumerationMemberAttributes.Count( ) )
+			{
+				enumerationMemberName = reference.ToString( );
+			}
+			else
+			{
+				enumerationMemberName = enumerationMemberAttributes.First( ).Description;
 			}
 			return enumerationMemberName;
 		}
