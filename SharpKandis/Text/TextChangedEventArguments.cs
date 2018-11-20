@@ -7,18 +7,18 @@ namespace SharpKandis.Text
 		EventArgs
 	{
 		/// <summary>Stores the text that has been changed.</summary>
-		private string _text = string.Empty;
+		private string text = string.Empty;
 
 		/// <summary>Gets / sets the text that has been changed.</summary>
 		public virtual string Text
 		{
 			get
 			{
-				return this._text;
+				return this.text;
 			}
 			private set
 			{
-				this._text = value;
+				this.text = value;
 			}
 		}
 
