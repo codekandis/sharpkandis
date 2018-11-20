@@ -7,18 +7,18 @@ namespace SharpKandis.Windows.Forms
 		EventArgs
 	{
 		/// <summary>Stores the visible state that has been changed.</summary>
-		private bool _visible = false;
+		private bool visible = false;
 
 		/// <summary>Gets / sets the visible state that has been changed.</summary>
 		public virtual bool Visible
 		{
 			get
 			{
-				return this._visible;
+				return this.visible;
 			}
 			private set
 			{
-				this._visible = value;
+				this.visible = value;
 			}
 		}
 
