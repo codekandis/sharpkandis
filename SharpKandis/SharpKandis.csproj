@@ -50,6 +50,11 @@
     <Compile Include="ExceptionXt.cs" />
     <Compile Include="ByteArrayXt.cs" />
     <Compile Include="ConsoleXt.cs" />
+    <Compile Include="Io\DirectoryAccessEventArguments.cs" />
+    <Compile Include="Io\DirectoryAccessEventHandler.cs" />
+    <Compile Include="Io\FileAccessEventArguments.cs" />
+    <Compile Include="Io\FileAccessEventHandler.cs" />
+    <Compile Include="Io\PipeManager.cs" />
     <Compile Include="TypeXt.cs" />
     <Compile Include="StringXt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
