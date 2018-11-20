@@ -79,10 +79,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpKandis.Text\SharpKandis.Text.csproj">
-      <Project>{c373ab40-25f2-41df-91f0-e57b8e8a5414}</Project>
-      <Name>SharpKandis.Text</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SharpKandis\SharpKandis.csproj">
       <Project>{f0796aae-dbdb-4b0d-96e6-018e6e2953be}</Project>
       <Name>SharpKandis</Name>
