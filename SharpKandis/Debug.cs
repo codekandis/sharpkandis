@@ -4,10 +4,14 @@ using System.IO;
 /// <summary>Represents a class for debugging purposes.</summary>
 public static class Debug
 {
-	/// <summary>Stores the list of <i>TextWriter</i> instances of the logger.</summary>
+	/// <summary>
+	/// Stores the list of <i>TextWriter</i> instances of the logger.
+	/// </summary>
 	private static IList<TextWriter> textWriters = null;
 
-	/// <summary>Gets the list of <i>TextWriter</i> instances of the logger.</summary>
+	/// <summary>
+	/// Gets the list of <i>TextWriter</i> instances of the logger.
+	/// </summary>
 	private static IList<TextWriter> TextWriters
 	{
 		get
@@ -16,10 +20,14 @@ public static class Debug
 		}
 	}
 
-	/// <summary>Stores the <i>Stream</i> instances of the logger.</summary>
+	/// <summary>
+	/// Stores the <i>Stream</i> instances of the logger.
+	/// </summary>
 	private static IList<Stream> streams = null;
 
-	/// <summary>Gets the <i>Stream</i> instances of the logger.</summary>
+	/// <summary>
+	/// Gets the <i>Stream</i> instances of the logger.
+	/// </summary>
 	private static IList<Stream> Streams
 	{
 		get
@@ -28,35 +36,45 @@ public static class Debug
 		}
 	}
 
-	/// <summary>Adds a <i>TextWriter</i> instance to the logger.</summary>
+	/// <summary>
+	/// Adds a <i>TextWriter</i> instance to the logger.
+	/// </summary>
 	/// <param name="textWriter">The <i>TextWriter</i> instance to add.</param>
 	public static void AddTextWriter( TextWriter textWriter )
 	{
 		Debug.TextWriters.Add( textWriter );
 	}
 
-	/// <summary>Removes a <i>TextWriter</i> instance from the logger.</summary>
+	/// <summary>
+	/// Removes a <i>TextWriter</i> instance from the logger.
+	/// </summary>
 	/// <param name="textWriter">The <i>TextWriter</i> instance to remove.</param>
 	public static void RemoveTextWriter( TextWriter textWriter )
 	{
 		Debug.TextWriters.Remove( textWriter );
 	}
 
-	/// <summary>Adds a <i>Stream</i> instance to the logger.</summary>
+	/// <summary>
+	/// Adds a <i>Stream</i> instance to the logger.
+	/// </summary>
 	/// <param name="textWriter">The <i>Stream</i> instance to add.</param>
 	public static void AddStream( Stream stream )
 	{
 		Debug.Streams.Add( stream );
 	}
 
-	/// <summary>Removes a <i>Stream</i> instance from the logger.</summary>
+	/// <summary>
+	/// Removes a <i>Stream</i> instance from the logger.
+	/// </summary>
 	/// <param name="textWriter">The <i>Stream</i> instance to remove.</param>
 	public static void RemoveStream( Stream stream )
 	{
 		Debug.Streams.Remove( stream );
 	}
 
-	/// <summary>Logs a message with specified values to the registered <i>TextWriter</i> and <i>Stream</i> instances.</summary>
+	/// <summary>
+	/// Logs a message with specified values to the registered <i>TextWriter</i> and <i>Stream</i> instances.
+	/// </summary>
 	/// <param name="reference">The reference of the log.</param>
 	/// <param name="values">The values to log.</param>
 	public static void Log( object reference, params object[ ] values )

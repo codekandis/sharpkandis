@@ -3,11 +3,15 @@ using System.Collections.Generic;
 
 namespace SharpKandis.Io
 {
-	/// <summary>Represents a pipe manager.</summary>
+	/// <summary>
+	/// Represents a pipe manager.
+	/// </summary>
 	public class PipeManager
 		: PipeManagerInterface
 	{
-		/// <summary>Gets the piped input from the standard input stream.</summary>
+		/// <summary>
+		/// Gets the piped input from the standard input stream.
+		/// </summary>
 		/// <returns>The piped input from the standard input stream.</returns>
 		public virtual IList<string> InputGet( )
 		{

@@ -3,10 +3,14 @@ using System.Collections.Generic;
 
 namespace SharpKandis
 {
-	/// <summary>Represents an extension class of all <i>System.Type</i> classes.</summary>
+	/// <summary>
+	/// Represents an extension class of all <i>System.Type</i> classes.
+	/// </summary>
 	public static class TypeXt
 	{
-		/// <summary>Removes the generic dimension from the type name.</summary>
+		/// <summary>
+		/// Removes the generic dimension from the type name.
+		/// </summary>
 		/// <param name="name">The name of the type.</param>
 		/// <returns>The name of the type without the generic dimension.</returns>
 		private static string RemoveGenericDimension( string name )
@@ -19,7 +23,9 @@ namespace SharpKandis
 			return processedName;
 		}
 
-		/// <summary>Gets the name of the type without assembly information and without a generic dimension.</summary>
+		/// <summary>
+		/// Gets the name of the type without assembly information and without a generic dimension.
+		/// </summary>
 		/// <param name="reference">The type to get its name.</param>
 		/// <returns>The name of the type without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedName( this Type reference )
@@ -29,7 +35,9 @@ namespace SharpKandis
 				   : TypeXt.RemoveGenericDimension( reference.Name );
 		}
 
-		/// <summary>Gets the full name of the type including the namespace, without assembly information and without a generic dimension.</summary>
+		/// <summary>
+		/// Gets the full name of the type including the namespace, without assembly information and without a generic dimension.
+		/// </summary>
 		/// <param name="reference">The type to get its full name.</param>
 		/// <returns>The full name of the type including the namespace, without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedNameFull( this Type reference )
@@ -39,7 +47,9 @@ namespace SharpKandis
 				   : reference.Namespace + '.' + reference.GetProcessedName( );
 		}
 
-		/// <summary>Gets the name of the generic type without assembly information and without a generic dimension.</summary>
+		/// <summary>
+		/// Gets the name of the generic type without assembly information and without a generic dimension.
+		/// </summary>
 		/// <param name="reference">The generic type to get its name.</param>
 		/// <returns>The name of the generic type without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedNameGeneric( this Type reference )
@@ -61,7 +71,9 @@ namespace SharpKandis
 			return processedNameGeneric;
 		}
 
-		/// <summary>Gets the full name of the generic type including the namespace, without assembly information and without a generic dimension.</summary>
+		/// <summary>
+		/// Gets the full name of the generic type including the namespace, without assembly information and without a generic dimension.
+		/// </summary>
 		/// <param name="reference">The generic type to get its full name.</param>
 		/// <returns>The full name of the generic type including the namespace, without assembly information and without a generic dimension.</returns>
 		public static string GetProcessedNameGenericFull( this Type reference )

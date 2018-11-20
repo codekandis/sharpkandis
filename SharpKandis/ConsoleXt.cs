@@ -5,10 +5,14 @@ using SharpKandis.Collections.Generic;
 
 namespace SharpKandis
 {
-	/// <summary>Represents an extension class of all <i>System.Console</i> classes.</summary>
+	/// <summary>
+	/// Represents an extension class of all <i>System.Console</i> classes.
+	/// </summary>
 	public static class ConsoleXt
 	{
-		/// <summary>Gets the concatenated <i>string</i> representation of each element of the generic array.</summary>
+		/// <summary>
+		/// Gets the concatenated <i>string</i> representation of each element of the generic array.
+		/// </summary>
 		/// <param name="reference">The generic array to get the concatenated <i>string</i> representation of each element.</param>
 		/// <returns>The concatenated <i>string</i> representation of each element of the generic array.</returns>
 		public static string ToStringAll( this byte[ ] reference )
@@ -23,7 +27,9 @@ namespace SharpKandis
 			return stringAll;
 		}
 
-		/// <summary>Reads a character from the console input stream.</summary>
+		/// <summary>
+		/// Reads a character from the console input stream.
+		/// </summary>
 		/// <param name="charactersAllowed">Specifies the list of valid characters.</param>
 		/// <param name="caseSensitive">Specifies if the input is recognized case sensitive</param>
 		/// <returns>The character read from the console input stream.</returns>
@@ -63,7 +69,9 @@ namespace SharpKandis
 			return input;
 		}
 
-		/// <summary>Reads a character from the console input stream.</summary>
+		/// <summary>
+		/// Reads a character from the console input stream.
+		/// </summary>
 		/// <param name="charactersAllowed">Specifies the list of valid characters.</param>
 		/// <returns>The character read from the console input stream.</returns>
 		public static char Read( char[ ] charactersAllowed )

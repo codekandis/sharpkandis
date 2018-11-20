@@ -3,22 +3,30 @@ using System.Linq;
 
 namespace SharpKandis.Collections.Generic
 {
-	/// <summary>Represents an extension class for all generic <i>System.Collections.Generic.IEnumerable&lt;T&gt;</i> classes.</summary>
+	/// <summary>
+	/// Represents an extension class for all generic <i>System.Collections.Generic.IEnumerable&lt;T&gt;</i> classes.
+	/// </summary>
 	public static class IEnumerableXt
 	{
-		/// <summary>Defines the ForEach callback delegate providing the fetched element.</summary>
+		/// <summary>
+		/// Defines the ForEach callback delegate providing the fetched element.
+		/// </summary>
 		/// <typeparam name="TElementFetched">The type of the fetched element.</typeparam>
 		/// <param name="elementFetched">The fetched element.</param>
 		public delegate void ForEachDelegateFetched<TElementFetched>( TElementFetched elementFetched );
 
-		/// <summary>Defines the ForEach callback delegate providing the index of the fetched element and the fetched element itself.</summary>
+		/// <summary>
+		/// Defines the ForEach callback delegate providing the index of the fetched element and the fetched element itself.
+		/// </summary>
 		/// <typeparam name="TElementIndex">The type of the index of the fetched element.</typeparam>
 		/// <typeparam name="TElementFetched">The type of the fetched element.</typeparam>
 		/// <param name="elementIndex">The index of the fetched element.</param>
 		/// <param name="elementFetched">The fetched element.</param>
 		public delegate void ForEachDelegateIndexFetched<TElementIndex, TElementFetched>( TElementIndex elementIndex, TElementFetched elementFetched );
 
-		/// <summary>Invokes a specified callback on any element of a specified generic enumerable.</summary>
+		/// <summary>
+		/// Invokes a specified callback on any element of a specified generic enumerable.
+		/// </summary>
 		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
 		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
 		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. The callback provides the fetched element itself.</param>
@@ -30,7 +38,9 @@ namespace SharpKandis.Collections.Generic
 			}
 		}
 
-		/// <summary>Invokes a specified callback on any element of a specified generic enumerable.</summary>
+		/// <summary>
+		/// Invokes a specified callback on any element of a specified generic enumerable.
+		/// </summary>
 		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
 		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
 		/// <param name="callback">The callback to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. The callback provides the index of the fetched element and the fetched element itself.</param>
@@ -43,7 +53,9 @@ namespace SharpKandis.Collections.Generic
 			}
 		}
 
-		/// <summary>Invokes a specified callback on any element of a specified generic enumerable.</summary>
+		/// <summary>
+		/// Invokes a specified callback on any element of a specified generic enumerable.
+		/// </summary>
 		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
 		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
 		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. Each callback provides the the fetched element itself.</param>
@@ -60,7 +72,9 @@ namespace SharpKandis.Collections.Generic
 			}
 		}
 
-		/// <summary>Invokes a specified callback on any element of a specified generic enumerable.</summary>
+		/// <summary>
+		/// Invokes a specified callback on any element of a specified generic enumerable.
+		/// </summary>
 		/// <typeparam name="TElement">The type of all elements of the generic enumerable passed in the argument <i>reference</i>.</typeparam>
 		/// <param name="reference">The generic enumerable to invoke the callback passed in the argument <i>callback</i> on any element.</param>
 		/// <param name="callbacks">The list of callbacks to invoke on any element of the generic enumerable passed in the argument <i>reference</i>. Each callback provides the index of the fetched element and the fetched element itself.</param>

@@ -3,14 +3,20 @@ using System.IO;
 
 namespace SharpKandis.Io
 {
-	/// <summary>Represents the event arguments of a file access event.</summary>
+	/// <summary>
+	/// Represents the event arguments of a file access event.
+	/// </summary>
 	public class FileAccessEventArguments:
 		EventArgs
 	{
-		/// <summary>Stores the name of the accessed file.</summary>
+		/// <summary>
+		/// Stores the name of the accessed file.
+		/// </summary>
 		private string fileName = null;
 
-		/// <summary>Gets / sets the name of the accessed file.</summary>
+		/// <summary>
+		/// Gets / sets the name of the accessed file.
+		/// </summary>
 		public virtual string FileName
 		{
 			get
@@ -22,10 +28,14 @@ namespace SharpKandis.Io
 				this.fileName = value;
 			}
 		}
-		/// <summary>Stores the file information object of the accessed file.</summary>
+		/// <summary>
+		/// Stores the file information object of the accessed file.
+		/// </summary>
 		private FileInfo fileInformation = null;
 
-		/// <summary>Gets the file information object of the accessed file.</summary>
+		/// <summary>
+		/// Gets the file information object of the accessed file.
+		/// </summary>
 		public virtual FileInfo FileInformation
 		{
 			get
@@ -34,10 +44,14 @@ namespace SharpKandis.Io
 			}
 		}
 
-		/// <summary>Stores if the file access was successful.</summary>
+		/// <summary>
+		/// Stores if the file access was successful.
+		/// </summary>
 		private bool successful = false;
 
-		/// <summary>Gets / sets if the file access was successful.</summary>
+		/// <summary>
+		/// Gets / sets if the file access was successful.
+		/// </summary>
 		public virtual bool Successful
 		{
 			get
@@ -50,10 +64,14 @@ namespace SharpKandis.Io
 			}
 		}
 
-		/// <summary>Stores the exception that may occured if the file access failed.</summary>
+		/// <summary>
+		/// Stores the exception that may occured if the file access failed.
+		/// </summary>
 		private Exception exception = null;
 
-		/// <summary>Gets / sets the exception that may occured if the file access failed.</summary>
+		/// <summary>
+		/// Gets / sets the exception that may occured if the file access failed.
+		/// </summary>
 		public virtual Exception Exception
 		{
 			get
@@ -66,7 +84,9 @@ namespace SharpKandis.Io
 			}
 		}
 
-		/// <summary>Constructor method.</summary>
+		/// <summary>
+		/// Constructor method.
+		/// </summary>
 		/// <param name="fileName">The name of the accessed file.</param>
 		/// <param name="successful"><i>true</i> if the file access was successful, <i>false</i> otherwise.</param>
 		/// <param name="exception">The exception that occured during file access.</param>

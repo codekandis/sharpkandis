@@ -3,14 +3,20 @@ using System.Drawing;
 
 namespace SharpKandis.Windows.Forms
 {
-	/// <summary>Represents the event arguments of the <i>ColorChanged</i> event.</summary>
+	/// <summary>
+	/// Represents the event arguments of the <i>ColorChanged</i> event.
+	/// </summary>
 	public class ColorChangedEventArguments:
 		EventArgs
 	{
-		/// <summary>Stores the color that has been changed.</summary>
+		/// <summary>
+		/// Stores the color that has been changed.
+		/// </summary>
 		private Color color = default( Color );
 
-		/// <summary>Gets / sets the color that has been changed.</summary>
+		/// <summary>
+		/// Gets / sets the color that has been changed.
+		/// </summary>
 		public virtual Color Color
 		{
 			get
@@ -23,7 +29,9 @@ namespace SharpKandis.Windows.Forms
 			}
 		}
 
-		/// <summary>Constructor method.</summary>
+		/// <summary>
+		/// Constructor method.
+		/// </summary>
 		/// <param name="color">The color that has been changed.</param>
 		public ColorChangedEventArguments( Color color )
 		{
