@@ -52,6 +52,7 @@
     <Compile Include="ConsoleXt.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="DecimalType.cs" />
+    <Compile Include="DoubleType.cs" />
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
