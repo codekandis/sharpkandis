@@ -48,6 +48,7 @@
     <Compile Include="ByteArrayXt.cs" />
     <Compile Include="BoolType.cs" />
     <Compile Include="ByteType.cs" />
+    <Compile Include="CharType.cs" />
     <Compile Include="ConsoleXt.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="EnumXt.cs" />
