@@ -61,6 +61,7 @@
     <Compile Include="SByteType.cs" />
     <Compile Include="StringXt.cs" />
     <Compile Include="TypeXt.cs" />
+    <Compile Include="UIntType.cs" />
     <Compile Include="UriXt.cs" />
     <Compile Include="WrappedValueTypeAbstract.cs" />
     <Compile Include="WrappedValueTypeInterface.cs" />
