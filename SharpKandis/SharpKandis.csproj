@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ArrayXt.cs" />
     <Compile Include="ByteArrayXt.cs" />
+    <Compile Include="BoolType.cs" />
     <Compile Include="ConsoleXt.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="EnumXt.cs" />
