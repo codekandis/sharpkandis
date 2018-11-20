@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayXt.cs" />
+    <Compile Include="Collections\CountableInterface.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
