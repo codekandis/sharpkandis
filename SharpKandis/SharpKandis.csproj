@@ -54,6 +54,7 @@
     <Compile Include="StringXt.cs" />
     <Compile Include="TypeXt.cs" />
     <Compile Include="UriXt.cs" />
+    <Compile Include="WrappedValueTypeAbstract.cs" />
     <Compile Include="WrappedValueTypeInterface.cs" />
     <Compile Include="Collections\CountableInterface.cs" />
     <Compile Include="Collections\Generic\IEnumerableXt.cs" />
