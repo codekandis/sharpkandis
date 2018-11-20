@@ -57,6 +57,7 @@
     <Compile Include="ExceptionXt.cs" />
     <Compile Include="FloatType.cs" />
     <Compile Include="IntType.cs" />
+    <Compile Include="LongType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SByteType.cs" />
     <Compile Include="StringXt.cs" />
