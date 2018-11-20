@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ArrayXt.cs" />
     <Compile Include="Collections\CountableInterface.cs" />
+    <Compile Include="Collections\Generic\IEnumerableXt.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
@@ -51,12 +52,6 @@
     <Compile Include="StringXt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UriXt.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SharpKandis.Collections.Generic\SharpKandis.Collections.Generic.csproj">
-      <Project>{06b23b3c-5916-438f-ba79-0c7f2c71ce2c}</Project>
-      <Name>SharpKandis.Collections.Generic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
