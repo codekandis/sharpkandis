@@ -68,6 +68,7 @@
     <Compile Include="Security\Encryption\EncryptionProviderInterface.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
     <Compile Include="Security\Encryption\MessageInterface.cs" />
+    <Compile Include="Security\Encryption\SignedMessageInterface.cs" />
     <Compile Include="ShortType.cs" />
     <Compile Include="StringType.cs" />
     <Compile Include="StringXt.cs" />
