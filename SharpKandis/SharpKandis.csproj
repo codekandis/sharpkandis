@@ -57,6 +57,7 @@
     <Compile Include="EnumXt.cs" />
     <Compile Include="ExceptionXt.cs" />
     <Compile Include="FloatType.cs" />
+    <Compile Include="Io\StreamableInterface.cs" />
     <Compile Include="IntType.cs" />
     <Compile Include="LongType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
