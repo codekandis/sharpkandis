@@ -70,6 +70,7 @@
     <Compile Include="Security\Encryption\DecryptedMessageInterface.cs" />
     <Compile Include="Security\Encryption\EncryptedMessage.cs" />
     <Compile Include="Security\Encryption\EncryptedMessageInterface.cs" />
+    <Compile Include="Security\Encryption\EncryptingActionInterface.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
     <Compile Include="Security\Encryption\MessageInterface.cs" />
     <Compile Include="Security\Encryption\SignedMessage.cs" />
