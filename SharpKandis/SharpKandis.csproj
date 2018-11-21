@@ -66,6 +66,7 @@
     <Compile Include="Security\Encryption\EncryptionProviderActionAbstract.cs" />
     <Compile Include="Security\Encryption\EncryptionProviderBuilderInterface.cs" />
     <Compile Include="Security\Encryption\EncryptionProviderInterface.cs" />
+    <Compile Include="Security\Encryption\DecryptedMessage.cs" />
     <Compile Include="Security\Encryption\DecryptedMessageInterface.cs" />
     <Compile Include="Security\Encryption\EncryptedMessage.cs" />
     <Compile Include="Security\Encryption\EncryptedMessageInterface.cs" />
