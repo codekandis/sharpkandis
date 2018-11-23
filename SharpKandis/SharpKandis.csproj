@@ -75,6 +75,7 @@
     <Compile Include="Security\Encryption\EncryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingActionInterface.cs" />
     <Compile Include="Security\Encryption\Gpg\BadPassphraseException.cs" />
+    <Compile Include="Security\Encryption\Gpg\BinaryNotFoundException.cs" />
     <Compile Include="Security\Encryption\Gpg\BinaryPath.cs" />
     <Compile Include="Security\Encryption\Gpg\EncryptionProviderConfig.cs" />
     <Compile Include="Security\Encryption\Gpg\EncryptionProviderConfigInterface.cs" />
