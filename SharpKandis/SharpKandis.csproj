@@ -81,6 +81,7 @@
     <Compile Include="Security\Encryption\Gpg\IgnoreProcessWarnings.cs" />
     <Compile Include="Security\Encryption\Gpg\KeyRingPath.cs" />
     <Compile Include="Security\Encryption\Gpg\Passphrase.cs" />
+    <Compile Include="Security\Encryption\Gpg\ProcessStandardErrorOutputParserInterface.cs" />
     <Compile Include="Security\Encryption\Gpg\Recipient.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
     <Compile Include="Security\Encryption\MessageInterface.cs" />
