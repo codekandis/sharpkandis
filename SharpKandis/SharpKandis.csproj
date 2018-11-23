@@ -74,6 +74,7 @@
     <Compile Include="Security\Encryption\DecryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingActionInterface.cs" />
+    <Compile Include="Security\Encryption\Gpg\BinaryPath.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
     <Compile Include="Security\Encryption\MessageInterface.cs" />
     <Compile Include="Security\Encryption\SignedMessage.cs" />
