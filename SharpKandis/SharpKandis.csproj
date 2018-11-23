@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SByteType.cs" />
     <Compile Include="Security\Encryption\ProcessErrorEventArguments.cs" />
+    <Compile Include="Security\Encryption\EncryptionProviderBuilderInterface.cs" />
     <Compile Include="Security\Encryption\EncryptionProviderInterface.cs" />
     <Compile Include="ShortType.cs" />
     <Compile Include="StringType.cs" />
