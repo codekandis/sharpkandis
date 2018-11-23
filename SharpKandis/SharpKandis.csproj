@@ -86,6 +86,7 @@
     <Compile Include="Security\Encryption\Gpg\ProcessWarningException.cs" />
     <Compile Include="Security\Encryption\Gpg\ProcessWarningsParser.cs" />
     <Compile Include="Security\Encryption\Gpg\Recipient.cs" />
+    <Compile Include="Security\Encryption\Gpg\RecipientNotFoundException.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
     <Compile Include="Security\Encryption\MessageInterface.cs" />
     <Compile Include="Security\Encryption\SignedMessage.cs" />
