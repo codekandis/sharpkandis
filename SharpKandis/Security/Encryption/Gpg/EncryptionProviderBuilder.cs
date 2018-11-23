@@ -1,4 +1,6 @@
-﻿namespace SharpKandis.Security.Encryption.Gpg
+﻿using System;
+
+namespace SharpKandis.Security.Encryption.Gpg
 {
 	/// <summary>
 	/// Represents a GPG encryption provider builder.
@@ -27,6 +29,14 @@
 		}
 
 		/// <summary>
+		/// Will be raised if a process error occures.
+		/// </summary>
+		public virtual event EventHandler<ProcessErrorEventArguments> ProcessError =
+			delegate
+			{
+			};
+
+		/// <summary>
 		/// Constructor method.
 		/// </summary>
 		/// <param name="encryptionProviderConfig">The GPG encryption provider configuration.</param>
@@ -41,7 +51,14 @@
 		/// <returns>The build GPG encryption provider.</returns>
 		public virtual EncryptionProviderInterface BuildEncryptionProvider( )
 		{
-			return new EncryptionProvider( this.EncryptionProviderConfig );
+			EncryptionProvider encryptionProvider = new EncryptionProvider( this.EncryptionProviderConfig );
+			encryptionProvider.ProcessError += this.EncryptionProvider_ProcessError;
+			return encryptionProvider;
+		}
+
+		private void EncryptionProvider_ProcessError( object sender, ProcessErrorEventArguments eventArguments )
+		{
+			this.ProcessError( sender, eventArguments );
 		}
 	}
 }
