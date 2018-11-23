@@ -74,6 +74,7 @@
     <Compile Include="Security\Encryption\MessageInterface.cs" />
     <Compile Include="Security\Encryption\SignedMessage.cs" />
     <Compile Include="Security\Encryption\SignedMessageInterface.cs" />
+    <Compile Include="Security\Encryption\SigningAction.cs" />
     <Compile Include="Security\Encryption\SigningActionInterface.cs" />
     <Compile Include="ShortType.cs" />
     <Compile Include="StringType.cs" />
