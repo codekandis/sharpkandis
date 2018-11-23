@@ -75,6 +75,7 @@
     <Compile Include="Security\Encryption\EncryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingActionInterface.cs" />
     <Compile Include="Security\Encryption\Gpg\BinaryPath.cs" />
+    <Compile Include="Security\Encryption\Gpg\IgnoreProcessErrors.cs" />
     <Compile Include="Security\Encryption\Gpg\IgnoreProcessWarnings.cs" />
     <Compile Include="Security\Encryption\Gpg\KeyRingPath.cs" />
     <Compile Include="Security\Encryption\Gpg\Passphrase.cs" />
