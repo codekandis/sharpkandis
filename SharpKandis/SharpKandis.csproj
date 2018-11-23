@@ -71,6 +71,7 @@
     <Compile Include="Security\Encryption\DecryptingActionInterface.cs" />
     <Compile Include="Security\Encryption\EncryptedMessage.cs" />
     <Compile Include="Security\Encryption\EncryptedMessageInterface.cs" />
+    <Compile Include="Security\Encryption\DecryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingAction.cs" />
     <Compile Include="Security\Encryption\EncryptingActionInterface.cs" />
     <Compile Include="Security\Encryption\Message.cs" />
