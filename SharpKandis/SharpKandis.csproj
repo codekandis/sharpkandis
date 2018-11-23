@@ -78,6 +78,7 @@
     <Compile Include="Security\Encryption\Gpg\BinaryNotFoundException.cs" />
     <Compile Include="Security\Encryption\Gpg\BinaryPath.cs" />
     <Compile Include="Security\Encryption\Gpg\EncryptionProvider.cs" />
+    <Compile Include="Security\Encryption\Gpg\EncryptionProviderBuilder.cs" />
     <Compile Include="Security\Encryption\Gpg\EncryptionProviderConfig.cs" />
     <Compile Include="Security\Encryption\Gpg\EncryptionProviderConfigInterface.cs" />
     <Compile Include="Security\Encryption\Gpg\IgnoreProcessErrors.cs" />
