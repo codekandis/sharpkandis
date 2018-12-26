@@ -2,6 +2,7 @@
 [Dd]ebug*/
 [Oo]bj*/
 [Rr]elease*/
+.vs/
 *.bak
 *.suo
 *.user
