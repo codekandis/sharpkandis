@@ -49,6 +49,7 @@
     <Compile Include="BoolType.cs" />
     <Compile Include="ByteType.cs" />
     <Compile Include="CharType.cs" />
+    <Compile Include="ComponentModel\BindableObjectInterface.cs" />
     <Compile Include="ConsoleXt.cs" />
     <Compile Include="DateTimeType.cs" />
     <Compile Include="Debug.cs" />
